@@ -106,12 +106,13 @@ h2 {
     padding: 14px 16px;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: border 0.2s, background 0.2s;
+    transition: border 0.2s, background 0.2s, transform 0.1s;
 }
 
 .answer:hover {
     background: #020617;
     border-color: #6366f1;
+    transform: translateX(3px);
 }
 
 /* ===== КРАСИВЫЕ RADIO ===== */

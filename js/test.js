@@ -30,6 +30,15 @@ fetch(`data/${subject}.json`)
         document.getElementById("test").innerHTML = html;
 
         window.correct = test.questions.map(q => q.correct);
+
+        document.querySelectorAll(".answer").forEach(label => {
+            label.addEventListener("click", () => {
+                const radio = label.querySelector("input[type='radio']");
+                if (radio) {
+                    radio.checked = true;
+                }
+            });
+        });
     });
 
 function check() {
