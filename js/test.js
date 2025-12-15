@@ -118,6 +118,19 @@ function setMode(mode) {
     if (MODE === "exam") startTimer();
 }
 
+function setMode(mode) {
+    MODE = mode;
+
+    document.getElementById("modeSelect").style.display = "none";
+
+    document.getElementById("content").style.display = "block";
+
+    if (MODE === "exam") {
+        document.getElementById("timer").style.display = "block";
+        startTimer();
+    }
+}
+
 function startTimer() {
     updateTimer();
     timerInterval = setInterval(() => {

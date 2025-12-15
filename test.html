@@ -6,20 +6,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="mode-select">
+    <div class="mode-select" id="modeSelect">
         <button onclick="setMode('train')">Тренировка</button>
         <button onclick="setMode('exam')">Контрольная</button>
     </div>
 
-    <div id="timer"></div>
+    <div id="timer" style="display:none"></div>
 
-    <div class="container">
+    <div class="container" id="content" style="display:none">
         <h1 id="title"></h1>
         <div id="test"></div>
         <button onclick="check()">Проверить</button>
         <div id="result"></div>
-
-        <script src="js/test.js"></script>
     </div>
+
+    <script src="js/test.js"></script>
 </body>
+
 </html>
