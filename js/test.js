@@ -47,13 +47,6 @@ fetch(`data/${subject}.json`)
     });
 
 function check() {
-    if (!MODE) {
-        alert("Выберите режим!");
-        return;
-    }
-
-    clearInterval(timerInterval);
-
     let right = 0;
     let errors = [];
 
